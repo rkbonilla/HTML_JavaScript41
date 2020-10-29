@@ -1,28 +1,23 @@
 html,body{
-    background-color: #999999;
-    background-image: url(../images/clouds.jpg);
+    background-image: url(../images/poly.jpg);
     display: flex;
     justify-content: center;
-    font-family: 'Syne Mono', monospace;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 #main-container{
     width: 1000px;
     padding: 10px;
-    border: 1px solid black;
-    background-color: #abafb1;
-}
-
-#main-container:hover{
-    opacity: 100%;
+    border: 2px solid black;
+    background-color: #c5c6c7;
 }
 
 #header{
     width: 980px;
     height: 100px;
     padding: 10px;
-    background-color: #333333;
-    color: white;
+    background-color: #1f2833;
+    color: #c5c6c7;
     line-height: 60px;
     margin: 0;
     text-align: center;
@@ -31,8 +26,8 @@ html,body{
 #nav{
     width: 1000px;
     height: 50px;
-    background-color: black;
-    border-top: 1px solid white;
+    background-color: #0b0c10;
+    border-top: 2px solid #c5c6c7;
     display: flex;
     justify-content: center;
 }
@@ -40,7 +35,7 @@ html,body{
 .btn{
     width: 100px;
     height: 50px;
-    background-color: red;
+    background-color: #45a29e;
     color: white;
     margin: auto;
     text-align: center;
@@ -50,7 +45,7 @@ html,body{
 }
 
 .btn:hover{
-    background-color: orange;
+    background-color: #66fcf1;
 }
 
 #content{
@@ -59,56 +54,43 @@ html,body{
 }
 
 .title{
+    margin: 2px 0 2px 0 ;
     padding: 5px 0 5px 0;
-    background-color: #444444;
+    background-color: #1f2833;
     text-align: center;
     color: white;
 }
 
 .content-left{
-    width: 600px;
+    width: 577px;
     padding: 10px;
-    background-color: #cccccc;
-    margin-top: 10px;
+    background-color: white;
+    margin-top: 2px;
     border: 3px solid black;
     border-right: 1.5px solid black;
 }
 
 .title-left{
-    width: 600px;
     padding: 5px 0 5px 0;
-    background-color: #444444;
+    background-color: #1f2833;
     text-align: center;
     color: white;
 }
 
-.txt-left{
-    width: 600px;
-    text-align: justify;
-    font-size: 18px;
-}
-
 .content-right{
-    width: 400px;
+    width: 377px;
     padding: 10px;
-    background-color: #cccccc;
-    margin-top: 10px;
+    background-color: white;
+    margin-top: 2px;
     border: 3px solid black;
     border-left: 1.5px solid black;
 }
 
 .title-right{
-    width: 400px;
     padding: 5px 0 5px 0;
-    background-color: #444444;
+    background-color: #1f2833;
     text-align: center;
     color: white;
-}
-
-.txt-right{
-    width: 400px;
-    font-size: 18px;
-    text-align: justify;
 }
 
 #footer{
@@ -117,4 +99,24 @@ html,body{
     font-size: 12px;
     line-height: 20px;
     text-align: center;
+}
+
+#content-left{
+    padding: 10px;
+    background-color: white;
+    margin-top: 2px;
+    border: 3px solid black;
+    border-right: 1.5px solid black;
+}
+
+@keyframes jump {
+    0% { transform: translate(-50%, -50%) scale(1, 1); }
+    50% { transform: translate(-50%, -150%) scale(1, 1); }
+    100% { transform: translate(-50%, -50%) scale(1, 1); }
+}
+
+#Mario{
+    margin-left: 225px;
+    width: 75px;
+    animation: jump 2s linear alternate infinite;
 }
