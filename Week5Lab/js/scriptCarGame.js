@@ -4,8 +4,8 @@ var c = document.querySelector('canvas');
 var ctx = c.getContext('2d');
 
 //Example for loading images to canvas.
-var mario = new Image();
-mario.src = 'images/mario.png';
+var sonic = new Image();
+sonic.src = 'images/sonic.gif';
 
 var x = 0;
 
@@ -101,7 +101,7 @@ function main() {
 
 function drawSprite() {
     //Draw image to canvas*/
-    ctx.drawImage(mario, x, 110, 100, 100);
+    ctx.drawImage(sonic, x, 110, 100, 100);
 }
 
 /*function drawBox() {
