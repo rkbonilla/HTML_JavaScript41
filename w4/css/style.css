@@ -14,21 +14,21 @@ body{
 
 #container{
     width:1024px;
-    background-color: #05386B;
+    background-color: rgb(20, 39, 82);
     padding: 10px;
 }
 
 header{
-    background-color: white;
+    background-color: rgb(59, 127, 212);
     margin-bottom: 10px;
     text-align: center;
-    -webkit-text-fill-color: blue;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: gold;
+    -webkit-text-fill-color: gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(20, 39, 82);
 }
 
 nav{
-    background-color: white;
+    background-color: rgb(59, 127, 212);;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -46,7 +46,28 @@ canvas{
 }
 
 footer{
-    background-color: white;
+    -webkit-text-fill-color: gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(20, 39, 82);
+    background-color:  rgb(59, 127, 212);
     margin-bottom: 10px;
-    text-align: center
+    text-align: center;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(20, 39, 82);
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    -webkit-text-fill-color: gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(20, 39, 82);
+}
+
+.btn:hover{
+    background-color: white;
 }
