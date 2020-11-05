@@ -1,0 +1,52 @@
+/*CSS goes here*/
+
+html,body{
+    height: auto;
+    margin: 0;
+    background-image: url(../images/2020-sonic-videoconf-studio.jpeg);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+#container{
+    width:1024px;
+    background-color: #05386B;
+    padding: 10px;
+}
+
+header{
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    -webkit-text-fill-color: blue;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: gold;
+}
+
+nav{
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+canvas{
+    background-image: url(../images/greenhillzone.jpg);
+    border:1px solid black;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: center
+}

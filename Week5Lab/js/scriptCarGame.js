@@ -70,11 +70,12 @@ function main() {
     else {
         if (fuel > 0) {
             //update x
-            x += 1;
             fuel -= 1;
-            car.x += 1
-            car2.x += 2
-            car3.x += 1
+            x += randomRange(10, 1);
+            car.x += randomRange(10, 1)
+            car2.x += randomRange(10, 1)
+            car3.x += randomRange(10, 1)
+
         }
     }
     //draw instance of car
@@ -87,6 +88,7 @@ function main() {
     ctx.strokeStyle = 'black';
     ctx.font = "50px Arial";
     ctx.textAlign = 'center'
+    ctx.fillStyle = "blue"
     ctx.fillText("Week 4 Lab", c.width / 2, 50);
     ctx.strokeText("Week 4 Lab", c.width / 2, 50);
 
