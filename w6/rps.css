@@ -1,0 +1,41 @@
+html,body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+body{
+    background-image: url(images/background.png);
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#container{
+    background-color: black;
+    width: auto;
+    border: 1px solid white;
+    padding: 7px;
+}
+
+canvas{
+    background-color: white;
+    border: 1px solid black;
+}
+
+a:link,a:hover{
+    background-color: yellow;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    background-color: gray;
+    color: black;
+}
