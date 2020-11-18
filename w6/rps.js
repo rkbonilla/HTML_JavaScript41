@@ -18,9 +18,7 @@ function youWin(){
     ctx.font = "50px Fredoka One";
     ctx.textAlign = 'center';
     ctx.fillStyle = "green"
-    ctx.strokeStyle = "black"
     ctx.fillText("You Win!", c.width / 2, c.height / 3)
-    ctx.strokeText("You Win!", c.width / 2, c.height / 3)
 }
 
 function youLose(){
@@ -28,19 +26,15 @@ function youLose(){
     ctx.font = "50px Fredoka One";
     ctx.textAlign = 'center';
     ctx.fillStyle = "red"
-    ctx.strokeStyle = "black"
     ctx.fillText("You Lose!", c.width / 2, c.height / 3)
-    ctx.strokeText("You Lose!", c.width / 2, c.height / 3)
 }
 
 function youTie(){
     ctx.lineWidth = 1;
     ctx.font = "50px Fredoka One";
     ctx.textAlign = 'center';
-    ctx.fillStyle = "gold"
-    ctx.strokeStyle = "black"
+    ctx.fillStyle = "#fee715ff"
     ctx.fillText("It's a tie!", c.width / 2, c.height / 3)
-    ctx.strokeText("It's a tie!", c.width / 2, c.height / 3)
 }
 
 
@@ -51,10 +45,8 @@ function play(playersChoice) {
     ctx.lineWidth = 1;
     ctx.font = "30px Fredoka One";
     ctx.textAlign = 'center';
-    ctx.fillStyle = "gold"
-    ctx.strokeStyle = "black"
+    ctx.fillStyle = "#fee715ff"
     ctx.fillText("Player Choice: " + rps[playersChoice] + " vs. Computer Choice: " + rps[cpuChoice], c.width / 2, c.height / 1.5)
-    ctx.strokeText("Player Choice: " + rps[playersChoice] + " vs. Computer Choice: " + rps[cpuChoice], c.width / 2, c.height / 1.5)
 
     switch(playersChoice){
         case 0: 

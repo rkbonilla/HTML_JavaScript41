@@ -5,37 +5,38 @@ html,body{
 }
 
 body{
-    background-image: url(images/background.png);
+    background-image: url(images/poly.jpg);
 }
 
 nav{
-    background-color: white;
+    background-color: #101820ff;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    border: 1px solid white;
 }
 
 #container{
-    background-color: black;
+    background-color: #101820ff;
     width: auto;
     border: 1px solid white;
     padding: 7px;
 }
 
 canvas{
-    background-color: white;
-    border: 1px solid black;
+    background-color: #101820ff;
+    border: 1px solid white;
 }
 
 a:link,a:hover{
-    background-color: yellow;
+    background-color: #fee715ff;
     padding: 10px;
     margin: 20px;
     text-decoration: none;
-    color: blue;
+    color: #101820ff;
 }
 
 a:hover{
-    background-color: gray;
+    background-color: white;
     color: black;
 }
