@@ -7,6 +7,7 @@ var ctx = c.getContext('2d')
 var timer = requestAnimationFrame(main)
 
 function main() {
+    timer = requestAnimationFrame(main)
     //clear the canvas
     ctx.clearRect(0, 0, 800, 600)
     drawBox()
