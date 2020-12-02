@@ -6,10 +6,7 @@ var ctx = c.getContext('2d')
 //Timer
 var timer = requestAnimationFrame(main)
 
-
-
 function main() {
-    timer = requestAnimationFrame(main)
     //clear the canvas
     ctx.clearRect(0, 0, 800, 600)
     drawBox()
@@ -25,16 +22,18 @@ function drawBox() {
     ctx.lineWidth = 5
     ctx.fillRect(87.5, 303.5, 95, 96)
     ctx.strokeRect(87.5, 303.5, 95, 96)
+    ctx.save()
 }
 
 function drawCircle() {
     ctx.fillStyle = '#ffff00'
     ctx.strokeStyle = 'red'
     ctx.lineWidth = 5
-    ctx.beginPath();
+    ctx.beginPath()
     ctx.arc(385, 441, 65, 0, 2 * Math.PI, false);
-    ctx.fill();
-    ctx.stroke();
+    ctx.fill()
+    ctx.stroke()
+    ctx.save()
 }
 
 function drawLine() {
@@ -43,6 +42,7 @@ function drawLine() {
     ctx.moveTo(85, 682)
     ctx.lineTo(278, 549)
     ctx.stroke()
+    ctx.save()
 }
 
 function drawPenta() {
@@ -57,6 +57,7 @@ function drawPenta() {
     ctx.closePath()
     ctx.fill()
     ctx.stroke()
+    ctx.save()
 }
 
 function drawStar() {
@@ -76,4 +77,5 @@ function drawStar() {
     ctx.closePath()
     ctx.fill()
     ctx.stroke()
+    ctx.save()
 }
