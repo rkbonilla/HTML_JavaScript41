@@ -31,6 +31,7 @@ function drawCircle() {
     ctx.lineWidth = 5
     ctx.beginPath()
     ctx.arc(385, 441, 65, 0, 2 * Math.PI, false);
+    ctx.closePath()
     ctx.fill()
     ctx.stroke()
     ctx.save()
@@ -39,8 +40,10 @@ function drawCircle() {
 function drawLine() {
     ctx.strokeStyle = `rgb(255,0,0)`
     ctx.lineWidth = 5
+    ctx.beginPath()
     ctx.moveTo(85, 682)
     ctx.lineTo(278, 549)
+    ctx.closePath()
     ctx.stroke()
     ctx.save()
 }
@@ -49,6 +52,7 @@ function drawPenta() {
     ctx.strokeStyle = '#00ffff'
     ctx.lineWidth = 5
     ctx.fillStyle = '#ff00ff'
+    ctx.beginPath()
     ctx.moveTo(557, 308)
     ctx.lineTo(667, 284)
     ctx.lineTo(724, 380)
@@ -64,6 +68,7 @@ function drawStar() {
     ctx.strokeStyle = `rgb(32,32,32)`
     ctx.lineWidth = 5
     ctx.fillStyle = '#ffff00'
+    ctx.beginPath()
     ctx.moveTo(635, 496)
     ctx.lineTo(667, 554)
     ctx.lineTo(732, 567)
