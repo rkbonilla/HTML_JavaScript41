@@ -11,11 +11,18 @@ var currentState = 0
 var ship
 var hiScore = 0
 var bgMain = new Image()
+var rocks = new Array(greyRocks, brownRocks)
 
 bgMain.src = "images/rocks.jpg"
+greyRocks.src = "images/greyrock.png"
+brownRocks.src = "images/brownrock.png"
 
 //Event listener to trigger main when image is loaded
 bgMain.onload = function () {
+    main()
+}
+
+greyRock.onload = function () {
     main()
 }
 
@@ -34,11 +41,12 @@ function Asteroids() {
 
     this.draw = function () {
         ctx.save()
-        ctx.beginPath()
+        /*ctx.beginPath()
         ctx.fillStyle = this.color
         ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, true)
         ctx.closePath()
-        ctx.fill()
+        ctx.fill()*/
+        ctx.drawImage(rocks, this.x - this.radius, this.y - this.radius, this.radius * 2, this.radius * 2)
         ctx.restore()
     }
 }
@@ -270,7 +278,7 @@ gameStates[2] = function () {
         ctx.fillText("Your new High Score is: " + hiScore.toString(), c.width / 2, c.height / 2 - 30)
         ctx.fillText("New Record", c.width / 2, c.height / 2)
         ctx.font = "15px Arial"
-        ctx.fillText("Press Enter to Start", c.width / 2, c.height / 2 + 20)
+        ctx.fillText("Press Enter to Play Again!", c.width / 2, c.height / 2 + 30)
         ctx.restore()
     }
     else {
@@ -281,7 +289,7 @@ gameStates[2] = function () {
         ctx.fillText("Game Over, Your score was: " + score.toString(), c.width / 2, c.height / 2 - 60)
         ctx.fillText("Your High Score is: " + hiScore.toString(), c.width / 2, c.height / 2 - 30)
         ctx.font = "15px Arial"
-        ctx.fillText("Press Enter to Start", c.width / 2, c.height / 2 + 20)
+        ctx.fillText("Press Enter to Play Again!", c.width / 2, c.height / 2 + 30)
         ctx.restore()
     }
 }
